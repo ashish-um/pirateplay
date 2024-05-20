@@ -1,8 +1,8 @@
-# React + Vite
+# Pirate Play 🏴‍☠️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+site online: https://ashish-um.github.io/pirateplay/
 
-Currently, two official plugins are available:
+> This is a movie discovery and streaming project built for educational use only.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="https://github.com/ashish-um/pirateplay/assets/83769253/13331848-f6b0-495e-b1e9-d28b273daab9" alt="drawing" style="width:600px;"/>
+<img src="https://github.com/ashish-um/pirateplay/assets/83769253/ba6d9622-3892-49a8-9cfd-dcf4abe8c2fa" alt="drawing" style="width:218px;"/>
