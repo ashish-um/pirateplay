@@ -19,23 +19,15 @@ function Card(props) {
       >
         <span
           style={{
-            position: "absolute",
-            right: "5px",
-            top: "8px",
-            color: "white",
             background: props.type == "movie" ? movieColor : seriesColor,
-            padding: "5px 10px",
-            borderRadius: "6px",
-            backdropFilter: "blur(8px)",
-            fontWeight: "bold",
-            boxShadow: "rgba(0, 0, 0, 0.85) 0px 2px 0px",
-            textTransform: "uppercase",
           }}
         >
           {props.type}
         </span>
         <div className="Card-info">
-          <p style={{ fontWeight: "bold", fontSize: "30px" }}>{props.title}</p>
+          <p className="title" style={{ fontWeight: "bold" }}>
+            {props.title}
+          </p>
           <p>{props.date}</p>
         </div>
         <div

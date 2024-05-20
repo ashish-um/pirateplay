@@ -78,11 +78,13 @@
 .imdbRating {
   margin: 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .imdbData {
   margin-left: 4px;
+  margin-right: 8px;
   display: flex;
   align-items: center;
   background: rgb(166, 135, 55);
@@ -116,9 +118,9 @@ h1 {
 }
 .genre {
   display: flex;
+  gap: 14px;
 }
 .genreItem {
-  margin-left: 14px;
   opacity: 0.6;
 }
 .actors {

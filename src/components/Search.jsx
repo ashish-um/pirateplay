@@ -24,7 +24,7 @@ function Search() {
         const l_page = pageNum + i;
         const options = {
           method: "GET",
-          url: "http://www.omdbapi.com/?apikey=98d002bf",
+          url: "https://www.omdbapi.com/?apikey=98d002bf",
           params: { s: inputText ? inputText : searchQuery, page: l_page },
         };
 
@@ -85,21 +85,23 @@ function Search() {
           e.preventDefault();
         }}
       >
-        <input
-          type="text"
-          value={inputText}
-          name="search"
-          onChange={(e) => {
-            setInputText(e.target.value);
-          }}
-          placeholder="Search..."
-        />
-        <button onClick={handleClick} style={{ padding: "4px 5px" }}>
-          <i
-            className="bx bx-search-alt-2"
-            style={{ width: "40px", fontSize: "25px" }}
-          ></i>
-        </button>
+        <div>
+          <input
+            type="text"
+            value={inputText}
+            name="search"
+            onChange={(e) => {
+              setInputText(e.target.value);
+            }}
+            placeholder="Search..."
+          />
+          <button onClick={handleClick}>
+            <i
+              className="bx bx-search-alt-2"
+              style={{ width: "40px", fontSize: "25px" }}
+            ></i>
+          </button>
+        </div>
       </form>
       <div className="content">
         {m_data.length ? (

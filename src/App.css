@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
 
+:root {
+  --s_width: 120px;
+  --s_height: 180px;
+}
+
 html {
   color-scheme: dark;
   background: none;
@@ -49,6 +54,24 @@ body {
   position: relative;
   margin: 5px;
 }
+
+.Card > span {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  /* backdrop-filter: blur(8px); */
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.85) 0px 2px 0px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 30px;
+}
+
 .Card:hover {
   cursor: pointer;
 }
@@ -88,19 +111,19 @@ body {
   top: 40%;
 }
 
-form {
-  display: flex;
-  justify-content: center;
-  margin: 20px 20px;
+form > div {
+  margin: 20px auto;
+  padding: 0px 20px;
+  position: relative;
+  max-width: 800px;
 }
 
-form > input {
+form input {
   font-family: "Radio Canada Big", sans-serif;
-  width: 500px;
+  width: -webkit-fill-available;
   min-width: 10px;
   padding: 10px 12px;
   outline: none;
-  /* border: 1px solid white; */
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -113,9 +136,12 @@ form > input {
   transition: 80ms;
 }
 
-form > button {
-  transform: translateX(-50px);
-  width: 50px;
+form button {
+  top: 0;
+  right: 20px;
+  position: absolute;
+  /* transform: translateX(-50px); */
+  height: 46px;
   border: 0;
   border-top: 0;
   border-left: 0;
@@ -123,14 +149,30 @@ form > button {
   background: none;
 }
 
-form > button:hover {
+form button:hover {
   cursor: pointer;
   color: gold;
 }
 
-form > input:focus {
+form input:focus {
   border: hidden;
   border-bottom: 1px solid white;
-  width: 520px;
-  transform: rotateX(12deg);
+  /* width: 520px; */
+  /* transform: matrix(1, 2, 3, 4, 5, 6); */
+  transform: rotateX(-12deg);
+  /* transform: scale(1.01); */
+}
+
+@media only screen and (max-width: 600px) {
+  .Card {
+    width: var(--s_width);
+    height: var(--s_height);
+  }
+  .Card > span {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+  .title {
+    font-size: 20px;
+  }
 }
