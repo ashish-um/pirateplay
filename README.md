@@ -1,4 +1,4 @@
-# Pirate Play 🏴‍☠️
+# <img src="https://github.com/ashish-um/pirateplay/assets/83769253/c38f923a-9499-4234-87bb-6cc4353e4153" alt="logo" style="width:30px;"/> Pirate Play 
 
 site online: https://ashish-um.github.io/pirateplay/
 
