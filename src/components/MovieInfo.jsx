@@ -4,7 +4,7 @@ import axios from "axios";
 import "../Info.css";
 import { useParams } from "react-router-dom";
 
-function Info() {
+function MovieInfo() {
   const movieColor = "#557aa9";
   const seriesColor = "#eb5656";
   const { imdbId } = useParams();
@@ -106,9 +106,9 @@ function Info() {
           </div>
           <div>
             <div className="plot" tabIndex={0}>
-              <p className="plotData">
+              <div className="plotData">
                 Plot:- <p>{data.Plot}</p>
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -119,4 +119,4 @@ function Info() {
   );
 }
 
-export default Info;
+export default MovieInfo;

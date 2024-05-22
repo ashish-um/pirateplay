@@ -10,7 +10,11 @@ function Card(props) {
   const seriesColor = "#eb5656";
 
   return (
-    <Link to={"/info/" + props.imdbId}>
+    <Link
+      to={
+        "/info/" + (props.type == "movie" ? "movie/" : "series/") + props.imdbId
+      }
+    >
       <div
         onMouseEnter={() => {
           props.setImg(props.image);

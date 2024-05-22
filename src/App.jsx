@@ -1,6 +1,7 @@
 import "./App.css";
 import Search from "./components/Search";
-import Info from "./components/Info";
+import MovieInfo from "./components/MovieInfo";
+import SeriesInfo from "./components/SeriesInfo";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,7 +10,13 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Search />} />
-          <Route path="/info/:imdbId" element={<Info />} />
+          <Route path="/info/movie/:imdbId" element={<MovieInfo />} />
+          <Route path="/info/series/:imdbId/" element={<SeriesInfo />} />
+          <Route path="/info/series/:imdbId/:season" element={<SeriesInfo />} />
+          <Route
+            path="/info/series/:imdbId/:season/:episode"
+            element={<SeriesInfo />}
+          />
           <Route
             path="*"
             element={
